@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCA352B4-5F14-41E5-9A95-E0E37FEA2F6C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HostelMS</RootNamespace>
+    <AssemblyName>HostelMS</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Hostel.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.7, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.7\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MethodsFW">
+      <HintPath>..\..\ClassLibraryNetFrmwrk\MethodsFW\bin\Debug\MethodsFW.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LivingMembs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LivingMembs.Designer.cs">
+      <DependentUpon>LivingMembs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmpPayment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpPayment.Designer.cs">
+      <DependentUpon>EmpPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrgtPswrd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrgtPswrd.Designer.cs">
+      <DependentUpon>FrgtPswrd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostelFuncs.cs" />
+    <Compile Include="LeavedEmps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeavedEmps.Designer.cs">
+      <DependentUpon>LeavedEmps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MembsFees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembsFees.Designer.cs">
+      <DependentUpon>MembsFees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEmployee.Designer.cs">
+      <DependentUpon>NewEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewMembers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMembers.Designer.cs">
+      <DependentUpon>NewMembers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdDelEmps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdDelEmps.Designer.cs">
+      <DependentUpon>UpdDelEmps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdDelMembs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdDelMembs.Designer.cs">
+      <DependentUpon>UpdDelMembs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VacantMembs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VacantMembs.Designer.cs">
+      <DependentUpon>VacantMembs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingEmps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingEmps.Designer.cs">
+      <DependentUpon>WorkingEmps.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="LivingMembs.resx">
+      <DependentUpon>LivingMembs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpPayment.resx">
+      <DependentUpon>EmpPayment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrgtPswrd.resx">
+      <DependentUpon>FrgtPswrd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeavedEmps.resx">
+      <DependentUpon>LeavedEmps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MembsFees.resx">
+      <DependentUpon>MembsFees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployee.resx">
+      <DependentUpon>NewEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMembers.resx">
+      <DependentUpon>NewMembers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdDelEmps.resx">
+      <DependentUpon>UpdDelEmps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdDelMembs.resx">
+      <DependentUpon>UpdDelMembs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VacantMembs.resx">
+      <DependentUpon>VacantMembs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingEmps.resx">
+      <DependentUpon>WorkingEmps.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HostelFile1.md" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\ForgotPassword.png" />
+    <Content Include="Hostel.ico" />
+    <Content Include="Hostel.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Hostel_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Hostel.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
