@@ -61,16 +61,14 @@ Database: SQL Server (LocalDB) with MDF file
 Database File: Hostel.mdf and Hostel_log.ldf
 Core Components:
 
-Code
+
 HostelFuncs.cs - Database helper class with methods:
   ├── GetConn() - Establishes SQL connection
   ├── GetData() - Executes SELECT queries
   ├── GetCount() - Returns count from queries
   └── SetData() - Executes INSERT/UPDATE queries
-Database Connection String:
 
 
-File Structure
 File	Purpose
 Program.cs	Application entry point - starts with Form1Login
 MainForm.cs	Dashboard with all module navigation
