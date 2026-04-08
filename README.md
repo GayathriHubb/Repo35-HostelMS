@@ -80,7 +80,7 @@ HostelFuncs.cs	Database helper functions,
 .resx files	Resource files for UI elements,
 HostelMS.csproj	Project configuration
 
-Database Features
+Database Features |
 The application uses a SQL Server database with tables for:
 
 Rooms - Room number, status, booking info |
